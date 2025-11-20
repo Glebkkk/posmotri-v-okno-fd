@@ -16,7 +16,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -60,7 +60,6 @@ ol {
   align-items: end;
   gap: 20px;
   width: 1140px;
-  height: 534px;
 }
 
 .search-form {
@@ -106,12 +105,11 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 2px;
 }
 
 .content__video-card {
   margin-right: 5px;
-  margin-left: -5px;
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -119,8 +117,9 @@ ol {
 }
 
 .content__video-card-thumbnail {
+  padding-top: 20px;
   width: 194px;
-  height: 103px;
+  min-height: 103px;
   object-fit: cover;
   object-position: center;
 }
@@ -134,16 +133,15 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, Arial, sans-serif;
   font-size: 18px;
   line-height: 100%;
   font-weight: 400;
 }
 
 .title {
-  margin-bottom: 10px;
   padding-left: 13px;
-  font-family: Oswald;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 75px;
   line-height: 94%;
   font-weight: 700;
@@ -156,14 +154,20 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   text-decoration: none;
   color: #fff;
 }
 
+.content__card-link:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
 .content__video-card-title {
   padding-left: 15px;
-  padding-top: 7px;
-  font-family: Oswald;
+  padding-top: 17px;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 100%;
@@ -186,7 +190,6 @@ ol {
   -webkit-line-clamp: 4;
   line-clamp: 4;
   -webkit-box-orient: vertical;
-  max-height: 65px;
 }
 
 .visually-hidden {
@@ -200,7 +203,9 @@ ol {
 }
 
 .search-form__checkbox-list {
-  margin: 10px 0;
+  margin-bottom: 2px;
+  margin-top: 5px;
+  margin-left: 2px;
   display: flex;
   justify-content: start;
   flex-direction: row;
@@ -228,7 +233,7 @@ ol {
   outline-offset: 1px;
 }
 
-.search-form__checkbox-list .search-form__label:hover {
+.search-form__checkbox-list:hover .search-form__label {
   text-decoration: underline;
   cursor: pointer
 }
@@ -290,7 +295,7 @@ input {
 }
 
 .button {
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, Arial, sans-serif;
   border: 2px solid #fff;
   background-color: transparent;
   font-size: 18px;
@@ -333,16 +338,8 @@ input {
   outline-offset: 2px;
 }
 
-.content__card-link {
-  display: block;
-}
-
 .content__card-link_current {
   background-color: inherit;
-}
-
-.content__card-link_current:active {
-  background-color: #545050;
 }
 
 .content__card-link:hover {
