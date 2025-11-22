@@ -58,7 +58,7 @@ ol {
   flex-direction: row;
   justify-content: center;
   align-items: end;
-  gap: 20px;
+  gap: 16px;
   width: 1140px;
 }
 
@@ -79,8 +79,7 @@ ol {
 }
 
 .content__list-item {
-  gap: 20px;
-  padding: 2px;
+  padding: 3px;
 }
 
 .content__details {
@@ -102,25 +101,52 @@ ol {
 }
 
 .content__list {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  justify-content: end;
+  gap: 18px;
 }
 
 .content__video-card {
   margin-right: 5px;
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: flex-start;
   gap: 10px
 }
 
 .content__video-card-thumbnail {
-  margin-top: 20px;
   width: 194px;
   min-height: 103px;
   object-fit: cover;
   object-position: center;
+}
+
+.content__video-card-title {
+  padding-left: 15px;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 200px;
+}
+
+.content__video-card-description {
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16.2px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 .content__video-card-description-container {
@@ -132,6 +158,7 @@ ol {
 }
 
 .search-form__fieldset-title {
+  padding-left: 3px;
   font-family: Fira Sans Condensed, Arial, sans-serif;
   font-size: 18px;
   line-height: 100%;
@@ -139,7 +166,7 @@ ol {
 }
 
 .title {
-  padding-left: 13px;
+  padding-left: 15px;
   font-family: Oswald, Arial, sans-serif;
   font-size: 75px;
   line-height: 94%;
@@ -163,34 +190,6 @@ ol {
   text-decoration: none;
 }
 
-.content__video-card-title {
-  padding-left: 15px;
-  padding-top: 17px;
-  font-family: Oswald, Arial, sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 100%;
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-  max-width: 200px;
-  margin-bottom: 5px;
-}
-
-.content__video-card-description {
-  padding-left: 15px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 16.2px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
-  -webkit-box-orient: vertical;
-}
-
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -203,7 +202,7 @@ ol {
 
 .search-form__checkbox-list {
   margin-top: 7px;
-  margin-left: 5px;
+  margin-left: 7px;
   display: flex;
   justify-content: start;
   flex-direction: row;
